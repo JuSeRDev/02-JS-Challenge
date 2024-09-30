@@ -121,6 +121,9 @@ body{
     position: relative;
     top: 1px;
     font-size: 15px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
 }
 
 .submit{
@@ -156,6 +159,10 @@ body{
     font-size: 15px;
 }
 
+.select{
+    background: transparent;
+}
+
 .parag2{
     text-align: center;
 }
@@ -163,6 +170,7 @@ body{
 .cont2{
     display: none;
 }
+
 
 footer{
     margin-top: 20px;
