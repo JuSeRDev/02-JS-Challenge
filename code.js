@@ -22,7 +22,6 @@ buttons.forEach((button)=>{
 
 submit.addEventListener("click",()=>{
     if (value === undefined) {
-        console.log(value);
         container2.style.display = "none"
     } else {
         container1.style.display = "none"
