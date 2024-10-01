@@ -5,6 +5,7 @@ const select = document.querySelector(".select")
 const container1 = document.querySelector(".cont1")
 const container2 = document.querySelector(".cont2")
 
+let value
 
 buttons.forEach((button)=>{
     button.addEventListener("click", ()=>{
@@ -13,13 +14,17 @@ buttons.forEach((button)=>{
         })
         button.parentElement.style.background = "var(--orange)"
         button.style.color = "var(--Very-Dark-Blue)"
-        let value = button.value
+        value = button.value
         select.innerHTML = value
         return value
     })
 })
 
 submit.addEventListener("click",()=>{
-    container1.style.display = "none"
-    container2.style.display = "block"
+    if (value === undefined) {
+        container2.style.display = "none"
+    } else {
+        container1.style.display = "none"
+        container2.style.display = "block"
+    }
 })

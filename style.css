@@ -135,6 +135,7 @@ body{
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
+    color: var(--Very-Dark-Blue);
 }
 
 .submit:active{
